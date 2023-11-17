@@ -32,6 +32,12 @@ namespace proyecto_solicitudes.wcfDatos {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ControlAsistencia", ReplyAction="http://tempuri.org/IService/ControlAsistenciaResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_ENTRA);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ControlAsistenciaSalir", ReplyAction="http://tempuri.org/IService/ControlAsistenciaSalirResponse")]
+        System.Data.DataSet ControlAsistenciaSalir(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ControlAsistenciaSalir", ReplyAction="http://tempuri.org/IService/ControlAsistenciaSalirResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaSalirAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -83,6 +89,14 @@ namespace proyecto_solicitudes.wcfDatos {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_ENTRA) {
             return base.Channel.ControlAsistenciaAsync(ID_USUARIO, FECHA_MARCA, HORA_ENTRA);
+        }
+        
+        public System.Data.DataSet ControlAsistenciaSalir(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA) {
+            return base.Channel.ControlAsistenciaSalir(ID_USUARIO, FECHA_MARCA, HORA_SALIDA);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaSalirAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA) {
+            return base.Channel.ControlAsistenciaSalirAsync(ID_USUARIO, FECHA_MARCA, HORA_SALIDA);
         }
     }
 }

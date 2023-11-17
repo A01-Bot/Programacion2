@@ -76,6 +76,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Admin.aspx" />
     <Content Include="ControlAsistencia.aspx" />
     <Content Include="home.aspx" />
     <Content Include="Login.aspx" />
@@ -87,6 +88,13 @@
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\wcfDatos\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

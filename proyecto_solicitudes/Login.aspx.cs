@@ -50,7 +50,6 @@ namespace proyecto_solicitudes
                                 Session["NOMBRE"] = ds.Tables["UsuarioValido"].Rows[0]["NOMBRE"].ToString();
                                 Session["LOGIN"] = ds.Tables["UsuarioValido"].Rows[0]["LOGIN"].ToString();
                                 Session["EMAIL"] = ds.Tables["UsuarioValido"].Rows[0]["EMAIL"].ToString();
-                                /*Response.Redirect("home.aspx?user=" + Txt_Usuario.Text);*/
                                 Response.Redirect("home.aspx");
 
                             }
