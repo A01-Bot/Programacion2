@@ -50,5 +50,18 @@ namespace proyecto_solicitudes
                 LbMensaje.Text = "Error!.. Datos no envidos";
             }
         }
+
+        protected void btn_MarcarSalida_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ds = ws.ControlAsistenciaSalir(int.Parse(Session["ID_USUARIO"].ToString()), DateTime.Parse(Fecha), DateTime.Parse(Hora));
+            }
+            catch (Exception ex) 
+            {
+                LbMensaje.Text = "Error!.. Datos no envidos";
+            }
+
+        }
     }
 }

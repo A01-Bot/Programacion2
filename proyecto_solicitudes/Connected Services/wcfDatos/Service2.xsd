@@ -85,4 +85,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ControlAsistenciaSalir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_USUARIO" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_MARCA" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="HORA_SALIDA" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControlAsistenciaSalirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ControlAsistenciaSalirResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
