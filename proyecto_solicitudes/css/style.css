@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+1 P: Propiedades de Posicionamiento
+2 C: Propiedades del Modelo de caja
+3 T: Propiedades de Texto
+4 V: Propiedades Varias o Extras
+*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper__welcome {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #6F5A7E;
+}
+
+.wrapper__image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.wrapper__text {
+    font-size: 1.4em;
+    font-weight:700;
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+    cursor: default;
+}
+
+.wrapper__text--space {
+    padding: 10px;
+    margin-top: 45px;
+    background-color: #252525;
+}
+
+.wrapper__text--box {
+    padding: 10px;
+    margin-top: 25px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+    background-color: #EBEDED;
+}
+
+.wrapper__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper__dates {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 3px solid #6F5A7E;
+    border-radius: 10px;
+    margin-right: 75px;
+    margin-top: 25px;
+    box-shadow: 0px 3px 3px #6F5A7E;
+}
+
+.wrapper__date {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    color: #6F5A7E;
+    cursor:default;
+}
+
+.wrapper__buttons{
+    display:inherit;
+    flex-flow:column;
+}
