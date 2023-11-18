@@ -51,15 +51,6 @@ namespace proyecto_solicitudes
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control LbHora.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LbHora;
-
-        /// <summary>
         /// Control LbFecha.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,15 @@ namespace proyecto_solicitudes
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LbFecha;
+
+        /// <summary>
+        /// Control LbHora.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbHora;
 
         /// <summary>
         /// Control Label3.
