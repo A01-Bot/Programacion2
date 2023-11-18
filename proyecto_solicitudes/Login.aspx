@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <title>Login Page</title>
+     <title>APP | LOGIN</title>
     <style>
         .login-page {
             width: 360px;
@@ -95,7 +95,7 @@
         <div class="login-page">
             <div class="form">
                 <form runat="server">
-                    <img src="https://res.cloudinary.com/drda5zneo/image/upload/v1568110985/graphic_px6ihs.png" alt="Logo">
+                    <img src="https://res.cloudinary.com/drda5zneo/image/upload/v1568110985/graphic_px6ihs.png" alt="Logo"/>
                     <h1>Bienvenido</h1>
                     <p>Ingresa tus credenciales para entrar</p>
                     <asp:TextBox ID="Txt_Usuario" runat="server"></asp:TextBox>
