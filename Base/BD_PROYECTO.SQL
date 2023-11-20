@@ -130,9 +130,29 @@ As
 Begin
     Update CONTROL_ASISTENCIAS Set 
     HORA_SALIDA = @HORA_SALIDA
-    Where FECHA_MARCA = @FECHA_MARCA 
+    Where FECHA_MARCA = @FECHA_MARCA AND ID_USUARIO = @ID_USUARIO
  -- Select 'OK-Registro modificado con éxito!' Mensaje
 End
+
+-- CREATE DE PROCESO PARA TABLA ADMIN
+
+CREATE PROC TABLA_DATOS
+    @ID_USUARIO INT
+AS 
+BEGIN 
+    SELECT 
+        U.NOMBRE,
+        S.TIEMPO_ESTIMADO,
+        S.MOTIVO,
+        S.ESTADO
+    FROM 
+        USUARIOS U
+    INNER JOIN 
+        SOLICITUDES S ON U.ID_USUARIO = S.ID_USUARIO
+    WHERE 
+        U.ID_USUARIO = @ID_USUARIO
+        AND S.ESTADO = 'P';
+END;
 
 
 

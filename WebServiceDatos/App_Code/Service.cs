@@ -86,7 +86,7 @@ public class Service : IService
 			da.SelectCommand.CommandType = CommandType.StoredProcedure;
 			da.SelectCommand.Parameters.AddWithValue("@ID_USUARIO",ID_USUARIO);
 			da.SelectCommand.Parameters.AddWithValue("@FECHA_MARCA",FECHA_MARCA);
-			da.SelectCommand.Parameters.AddWithValue("@HORA_SALIR", HORA_SALIDA);
+			da.SelectCommand.Parameters.AddWithValue("@HORA_SALIDA", HORA_SALIDA);
 			da.Fill(ds, "ControlAsistenciaSalir");
 		}
 		catch (Exception ex) 
@@ -95,4 +95,17 @@ public class Service : IService
 		}
         return ds;
     }
+	public DataSet DatosTb() {
+		try 
+		{
+			da = new SqlDataAdapter("SP_TABLA_DATOS", Conexion);
+			da.SelectCommand.CommandType = CommandType.StoredProcedure;
+			da.Fill(ds, "TbDatos");
+		}
+		catch (Exception ex)
+		{
+			ds = null;
+		}
+		return ds;
+	}
 }

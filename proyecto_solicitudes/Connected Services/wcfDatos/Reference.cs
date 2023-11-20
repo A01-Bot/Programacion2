@@ -38,6 +38,12 @@ namespace proyecto_solicitudes.wcfDatos {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ControlAsistenciaSalir", ReplyAction="http://tempuri.org/IService/ControlAsistenciaSalirResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaSalirAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DatosTb", ReplyAction="http://tempuri.org/IService/DatosTbResponse")]
+        System.Data.DataSet DatosTb();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DatosTb", ReplyAction="http://tempuri.org/IService/DatosTbResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> DatosTbAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace proyecto_solicitudes.wcfDatos {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaSalirAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA) {
             return base.Channel.ControlAsistenciaSalirAsync(ID_USUARIO, FECHA_MARCA, HORA_SALIDA);
+        }
+        
+        public System.Data.DataSet DatosTb() {
+            return base.Channel.DatosTb();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> DatosTbAsync() {
+            return base.Channel.DatosTbAsync();
         }
     }
 }

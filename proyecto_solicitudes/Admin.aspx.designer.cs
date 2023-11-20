@@ -51,13 +51,22 @@ namespace proyecto_solicitudes
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control GridView1.
+        /// Control TB_GW.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView TB_GW;
+
+        /// <summary>
+        /// Control SqlDatos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDatos;
 
         /// <summary>
         /// Control Label3.
@@ -69,22 +78,22 @@ namespace proyecto_solicitudes
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control Label5.
+        /// Control LbNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label LbNombre;
 
         /// <summary>
-        /// Control Label6.
+        /// Control Lb_TimeS.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Lb_TimeS;
 
         /// <summary>
         /// Control Label4.
@@ -96,13 +105,13 @@ namespace proyecto_solicitudes
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control Label7.
+        /// Control LbMotivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label LbMotivo;
 
         /// <summary>
         /// Control Button1.
@@ -121,5 +130,14 @@ namespace proyecto_solicitudes
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// Control LbMensaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbMensaje;
     }
 }

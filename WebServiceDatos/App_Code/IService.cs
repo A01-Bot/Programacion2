@@ -18,4 +18,6 @@ public interface IService
     DataSet ControlAsistencia(int ID_USUARIO,DateTime FECHA_MARCA, DateTime HORA_ENTRA);
     [OperationContract]
     DataSet ControlAsistenciaSalir(int ID_USUARIO, DateTime FECHA_MARCA, DateTime HORA_SALIDA);
+    [OperationContract]
+    DataSet DatosTb();
 }
