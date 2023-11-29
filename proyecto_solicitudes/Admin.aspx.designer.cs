@@ -114,13 +114,30 @@ namespace proyecto_solicitudes
         protected global::System.Web.UI.WebControls.Label LbMotivo;
 
         /// <summary>
+<<<<<<< HEAD
         /// Control Label10.
+=======
+        /// Control Label8.
+>>>>>>> 4317f680a3ff7602df9bf243a4ffa266098a9212
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label Label10;
+=======
+        protected global::System.Web.UI.WebControls.Label Label8;
+
+        /// <summary>
+        /// Control Label9.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Label9;
+>>>>>>> 4317f680a3ff7602df9bf243a4ffa266098a9212
 
         /// <summary>
         /// Control Lb_TiempoSoli.
@@ -129,15 +146,23 @@ namespace proyecto_solicitudes
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label Lb_TiempoSoli;
 
         /// <summary>
         /// Control Label11.
+=======
+        protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// Control Button1.
+>>>>>>> 4317f680a3ff7602df9bf243a4ffa266098a9212
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label Label11;
 
         /// <summary>
@@ -229,5 +254,8 @@ namespace proyecto_solicitudes
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SQL_DATOS2;
+=======
+        protected global::System.Web.UI.WebControls.Button Button1;
+>>>>>>> 4317f680a3ff7602df9bf243a4ffa266098a9212
     }
 }
