@@ -50,8 +50,16 @@ namespace proyecto_solicitudes
                                 Session["NOMBRE"] = ds.Tables["UsuarioValido"].Rows[0]["NOMBRE"].ToString();
                                 Session["LOGIN"] = ds.Tables["UsuarioValido"].Rows[0]["LOGIN"].ToString();
                                 Session["EMAIL"] = ds.Tables["UsuarioValido"].Rows[0]["EMAIL"].ToString();
-                                Response.Redirect("home.aspx");
-
+                                string usuario = ds.Tables["UsuarioValido"].Rows[0]["NOMBRE"].ToString();
+                                if (usuario == "Admin")
+                                {
+                                    Response.Redirect("Admin.aspx");
+                                }
+                                else
+                                {
+                                    Response.Redirect("home.aspx");
+                                }
+                                
                             }
                             else
                                 LbMensaje.Text = "Acceso Denegado!. Usuario Inactivo";

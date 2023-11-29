@@ -77,7 +77,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Admin.aspx" />
-    <Content Include="ControlAsistencia.aspx" />
     <Content Include="home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="SolicitudPermiso.aspx" />
@@ -99,13 +98,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="ControlAsistencia.aspx.cs">
-      <DependentUpon>ControlAsistencia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ControlAsistencia.aspx.designer.cs">
-      <DependentUpon>ControlAsistencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

@@ -39,11 +39,17 @@ namespace proyecto_solicitudes.wcfDatos {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ControlAsistenciaSalir", ReplyAction="http://tempuri.org/IService/ControlAsistenciaSalirResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> ControlAsistenciaSalirAsync(int ID_USUARIO, System.DateTime FECHA_MARCA, System.DateTime HORA_SALIDA);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DatosTb", ReplyAction="http://tempuri.org/IService/DatosTbResponse")]
-        System.Data.DataSet DatosTb();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModificarSolicitud", ReplyAction="http://tempuri.org/IService/ModificarSolicitudResponse")]
+        System.Data.DataSet ModificarSolicitud(int ID_USUARIO, string ESTADO, string COMENTARIO);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DatosTb", ReplyAction="http://tempuri.org/IService/DatosTbResponse")]
-        System.Threading.Tasks.Task<System.Data.DataSet> DatosTbAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModificarSolicitud", ReplyAction="http://tempuri.org/IService/ModificarSolicitudResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> ModificarSolicitudAsync(int ID_USUARIO, string ESTADO, string COMENTARIO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/BuscarControl", ReplyAction="http://tempuri.org/IService/BuscarControlResponse")]
+        System.Data.DataSet BuscarControl(string NOMBRE);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/BuscarControl", ReplyAction="http://tempuri.org/IService/BuscarControlResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> BuscarControlAsync(string NOMBRE);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -105,12 +111,20 @@ namespace proyecto_solicitudes.wcfDatos {
             return base.Channel.ControlAsistenciaSalirAsync(ID_USUARIO, FECHA_MARCA, HORA_SALIDA);
         }
         
-        public System.Data.DataSet DatosTb() {
-            return base.Channel.DatosTb();
+        public System.Data.DataSet ModificarSolicitud(int ID_USUARIO, string ESTADO, string COMENTARIO) {
+            return base.Channel.ModificarSolicitud(ID_USUARIO, ESTADO, COMENTARIO);
         }
         
-        public System.Threading.Tasks.Task<System.Data.DataSet> DatosTbAsync() {
-            return base.Channel.DatosTbAsync();
+        public System.Threading.Tasks.Task<System.Data.DataSet> ModificarSolicitudAsync(int ID_USUARIO, string ESTADO, string COMENTARIO) {
+            return base.Channel.ModificarSolicitudAsync(ID_USUARIO, ESTADO, COMENTARIO);
+        }
+        
+        public System.Data.DataSet BuscarControl(string NOMBRE) {
+            return base.Channel.BuscarControl(NOMBRE);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> BuscarControlAsync(string NOMBRE) {
+            return base.Channel.BuscarControlAsync(NOMBRE);
         }
     }
 }
