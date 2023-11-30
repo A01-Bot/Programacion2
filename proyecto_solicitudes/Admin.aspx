@@ -4,20 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>APP | ADMIN</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server" class="form__admin">
         <div class="container__admin">
-            <asp:Label ID="Label1" runat="server" Text="Bienvenido" class="title"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Bienvenidos"></asp:Label>
             <asp:Label ID="LbUser" runat="server" Text="_____"></asp:Label>
 
-<<<<<<< HEAD
             <br />
 
-            <asp:Label ID="Lb_TS" runat="server" Text="Tabla de Solicitudes"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Tabla de Solicitudes"></asp:Label>
             <br />
             <asp:GridView ID="Gw_Tb" runat="server" AllowCustomPaging="True" AutoGenerateColumns="False" AutoGenerateSelectButton="True" DataKeyNames="ID_USUARIO" DataSourceID="SQL_DATOS1" OnSelectedIndexChanged="Gw_Tb_SelectedIndexChanged">
                 <Columns>
@@ -72,34 +71,17 @@
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SQL_DATOS2">
                 <Columns>
                     <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" SortExpression="NOMBRE" />
+                    <asp:BoundField DataField="FECHA_MARCA" HeaderText="FECHA_MARCA" SortExpression="FECHA_MARCA" />
+                    <asp:BoundField DataField="HORA_ENTRADA" HeaderText="HORA_ENTRADA" SortExpression="HORA_ENTRADA" />
+                    <asp:BoundField DataField="FECHA_MARCA1" HeaderText="FECHA_MARCA1" SortExpression="FECHA_MARCA1" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SQL_DATOS2" runat="server" ConnectionString="<%$ ConnectionStrings:SOLICITUD_PERMISOS_SQL2 %>" ProviderName="<%$ ConnectionStrings:SOLICITUD_PERMISOS_SQL2.ProviderName %>" SelectCommand="SP_BuscarUsuario" SelectCommandType="StoredProcedure">
+            <asp:SqlDataSource ID="SQL_DATOS2" runat="server" ConnectionString="<%$ ConnectionStrings:SOLICITUD_PERMISOS_SQL2 %>" SelectCommand="SP_BUSCAR_USUARIO" SelectCommandType="StoredProcedure">
                 <SelectParameters>
-                    <asp:Parameter Name="Nombre" Type="String" />
+                    <asp:ControlParameter ControlID="txt_Buscar" Name="Nombre" PropertyName="Text" Type="String" />
                 </SelectParameters>
             </asp:SqlDataSource>
             <br />
-=======
-            <asp:Label ID="Lb2" runat="server" class="container__title title__label">Tabla de Solicitudes</asp:Label>
-            <asp:GridView ID="GridView1" runat="server">
-            </asp:GridView>
-            <asp:Label ID="Lb3" runat="server"  class="container__title title__label" >Nombre</asp:Label>
-            <asp:Label ID="Label5" runat="server" Text="------"></asp:Label>
-
-            <asp:Label runat="server"  class="container__title title__label" >Tiempo solicitad</asp:Label>
-            <asp:Label ID="Label6" runat="server" Text="------"></asp:Label>
-
-            <asp:Label ID="Lb4" runat="server" class="container__title title__label" >Motivo</asp:Label>
-            <asp:Label ID="Label7" runat="server" Text="------"></asp:Label>
-
-            <asp:Label ID="Lb8" runat="server" class="container__title title__label" Text="Comentario"></asp:Label>
-            <asp:TextBox ID="Lb9" runat="server" class="textarea__box"></asp:TextBox>
-            <div class="group__button">
-                <asp:Button ID="Button2" runat="server" Text="Aprobar" class="button" />
-                <asp:Button ID="Button1" runat="server" Text="Rechazar" class="button" />
-            </div>
->>>>>>> 4317f680a3ff7602df9bf243a4ffa266098a9212
         </div>
     </form>
 </body>

@@ -17,7 +17,7 @@ namespace proyecto_solicitudes
         {
             if (!Page.IsPostBack)
             {
-                LbUser.Text = Session["NOMBRE"].ToString();
+              /*  LbUser.Text = Session["NOMBRE"].ToString();*/
             }
         }
 
