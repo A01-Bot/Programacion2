@@ -24,7 +24,7 @@ namespace proyecto_solicitudes
                 LbFecha.Text = Fecha;
                 LbHora.Text = Hora;
                 LbUser.Text = Session["NOMBRE"].ToString();
-               string idUser = Session["ID_USUARIO"].ToString();
+             /*  string idUser = Session["ID_USUARIO"].ToString();*/
             
             }
 
@@ -55,7 +55,7 @@ namespace proyecto_solicitudes
         {
             try
             {
-                ds = ws.ControlAsistenciaSalir(int.Parse(Session["ID_USUARIO"].ToString()), DateTime.Parse(Fecha), DateTime.Parse(Hora));
+                ds = ws.ControlAsistenciaSalir(int.Parse(Session["ID_USUARIO"].ToString()),DateTime.Parse(Fecha),DateTime.Parse(Hora));
             }
             catch (Exception ex) 
             {

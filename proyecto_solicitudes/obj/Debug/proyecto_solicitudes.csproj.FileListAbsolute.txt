@@ -57,6 +57,7 @@ C:\Users\brand\Desktop\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proy
 C:\Users\brand\Desktop\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.csproj.CopyComplete
 C:\Users\brand\Desktop\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.dll
 C:\Users\brand\Desktop\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.pdb
+<<<<<<< Updated upstream
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\bin\proyecto_solicitudes.dll.config
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\bin\proyecto_solicitudes.dll
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\bin\proyecto_solicitudes.pdb
@@ -116,6 +117,8 @@ D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\p
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.csproj.CopyComplete
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.dll
 D:\DEV Estudios\Ejercicios de Práctica\Git\Repositorios\ProyectoProgramacion2\proyecto_solicitudes\obj\Debug\proyecto_solicitudes.pdb
+=======
+>>>>>>> Stashed changes
 C:\Users\brand\Desktop\Programacion2\proyecto_solicitudes\bin\proyecto_solicitudes.dll.config
 C:\Users\brand\Desktop\Programacion2\proyecto_solicitudes\bin\proyecto_solicitudes.dll
 C:\Users\brand\Desktop\Programacion2\proyecto_solicitudes\bin\proyecto_solicitudes.pdb

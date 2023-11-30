@@ -17,7 +17,7 @@
 <<<<<<< HEAD
             <br />
 
-            <asp:Label ID="Label2" runat="server" Text="Tabla de Solicitudes"></asp:Label>
+            <asp:Label ID="Lb_TS" runat="server" Text="Tabla de Solicitudes"></asp:Label>
             <br />
             <asp:GridView ID="Gw_Tb" runat="server" AllowCustomPaging="True" AutoGenerateColumns="False" AutoGenerateSelectButton="True" DataKeyNames="ID_USUARIO" DataSourceID="SQL_DATOS1" OnSelectedIndexChanged="Gw_Tb_SelectedIndexChanged">
                 <Columns>
@@ -81,20 +81,20 @@
             </asp:SqlDataSource>
             <br />
 =======
-            <asp:Label ID="Label2" runat="server" class="container__title title__label">Tabla de Solicitudes</asp:Label>
+            <asp:Label ID="Lb2" runat="server" class="container__title title__label">Tabla de Solicitudes</asp:Label>
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>
-            <asp:Label ID="Label3" runat="server"  class="container__title title__label" >Nombre</asp:Label>
+            <asp:Label ID="Lb3" runat="server"  class="container__title title__label" >Nombre</asp:Label>
             <asp:Label ID="Label5" runat="server" Text="------"></asp:Label>
 
             <asp:Label runat="server"  class="container__title title__label" >Tiempo solicitad</asp:Label>
             <asp:Label ID="Label6" runat="server" Text="------"></asp:Label>
 
-            <asp:Label ID="Label4" runat="server" class="container__title title__label" >Motivo</asp:Label>
+            <asp:Label ID="Lb4" runat="server" class="container__title title__label" >Motivo</asp:Label>
             <asp:Label ID="Label7" runat="server" Text="------"></asp:Label>
 
-            <asp:Label ID="Label8" runat="server" class="container__title title__label" Text="Comentario"></asp:Label>
-            <asp:TextBox ID="Label9" runat="server" class="textarea__box"></asp:TextBox>
+            <asp:Label ID="Lb8" runat="server" class="container__title title__label" Text="Comentario"></asp:Label>
+            <asp:TextBox ID="Lb9" runat="server" class="textarea__box"></asp:TextBox>
             <div class="group__button">
                 <asp:Button ID="Button2" runat="server" Text="Aprobar" class="button" />
                 <asp:Button ID="Button1" runat="server" Text="Rechazar" class="button" />
