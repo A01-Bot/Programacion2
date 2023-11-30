@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HOME*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper__welcome {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #daa520;
+}
+
+.button__action {
+    display: none;
+    margin-top: 25px;
+}
+
+.button__scroll {
+    text-decoration: none;
+}
+
+.button__scroll-text {
+    font-family: "Inconsolata", monospace;
+    color: rgba(28,28,30,1);
+}
+
+.button__action:hover .button__scroll-box {
+    animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+    0%, 100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+}
+
+.wrapper__image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapper__text {
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+    cursor: default;
+}
+
+.wrapper__text--space {
+    padding: 10px;
+    margin-top: 45px;
+    background-color: #252525;
+}
+
+.wrapper__text--box {
+    padding: 10px;
+    margin-top: 25px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+    background-color: #EBEDED;
+}
+
+.wrapper__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper__dates {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 3px solid #daa520;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-top: 25px;
+    box-shadow: 0px 3px 3px #daa520;
+}
+
+.wrapper__date {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    color: #daa520;
+    cursor: default;
+}
+
+.title {
+    padding: 1em;
+    max-width: 600px;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+}
+
+.wrapper__buttons {
+    display: inherit;
+    flex-flow: column;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #daa520;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #daa520;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #daa520;
+    ;
+}
+
+    .button:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #daa520;
+    }
+
+    .button:active {
+        transform: scale(0.9);
+    }
+
+
+.hidden {
+    display: hidden;
+}
+
+
+/*Solicitudes*/
+.solicitud__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    perspective: 2000px;
+}
+
+.solicitud__container {
+    margin-top: -75px;
+    min-height: 600px;
+    min-width: 60%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.solicitud__form:hover .solicitud__container {
+    transform: rotateY(180deg);
+}
+
+
+.container__front,
+.container__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.container__front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #daa520;
+    transform: rotateY(0deg);
+}
+
+.container__back {
+    background-color: #daa520;
+    color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+
+.solicitud__title {
+    padding: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #252525;
+    font-size: 2.2em;
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+}
+
+
+.solicitud__control {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    font-family: "Inconsolata", monospace;
+    background-color: #252525;
+}
+
+.container__control {
+    display: flex;
+    padding: 2.4em;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.solicitud__input {
+    padding: 30px;
+    margin: 15px 0;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: "Inconsolata", monospace;
+    height: auto;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    line-height: 2em;
+}
+
+.container__radiobutton {
+    margin: 25px 0;
+}
+
+.solicitud__input--change {
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+}
+
+.container__title {
+    padding: 5px;
+    max-width: 450px;
+    border-bottom:4px solid #ff6a00;
+    background-color: #daa520;
+}
+
+/*ADMIN*/
+.form__admin{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container__admin{
+    
+    padding:2.2em;
+    background-color:#252525;
+    color:#fff;
+}
