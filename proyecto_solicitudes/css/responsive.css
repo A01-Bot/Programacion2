@@ -1,9 +1,0 @@
-@media (max-width:1024px) {
-    .wrapper {
-        flex-direction: column;
-    }
-
-    .button__action {
-        display: initial;
-    }
-}
