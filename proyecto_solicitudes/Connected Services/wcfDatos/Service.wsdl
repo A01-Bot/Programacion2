@@ -31,6 +31,18 @@
   <wsdl:message name="IService_ControlAsistenciaSalir_OutputMessage">
     <wsdl:part name="parameters" element="tns:ControlAsistenciaSalirResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_ModificarSolicitud_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="IService_ModificarSolicitud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_BuscarControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarControl" />
+  </wsdl:message>
+  <wsdl:message name="IService_BuscarControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarControlResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="ValidarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/ValidarUsuario" message="tns:IService_ValidarUsuario_InputMessage" />
@@ -47,6 +59,14 @@
     <wsdl:operation name="ControlAsistenciaSalir">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/ControlAsistenciaSalir" message="tns:IService_ControlAsistenciaSalir_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/ControlAsistenciaSalirResponse" message="tns:IService_ControlAsistenciaSalir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarSolicitud">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ModificarSolicitud" message="tns:IService_ModificarSolicitud_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ModificarSolicitudResponse" message="tns:IService_ModificarSolicitud_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/BuscarControl" message="tns:IService_BuscarControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/BuscarControlResponse" message="tns:IService_BuscarControl_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
@@ -80,6 +100,24 @@
     </wsdl:operation>
     <wsdl:operation name="ControlAsistenciaSalir">
       <soap:operation soapAction="http://tempuri.org/IService/ControlAsistenciaSalir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarSolicitud">
+      <soap:operation soapAction="http://tempuri.org/IService/ModificarSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarControl">
+      <soap:operation soapAction="http://tempuri.org/IService/BuscarControl" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
